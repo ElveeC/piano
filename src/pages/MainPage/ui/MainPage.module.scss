@@ -1,0 +1,18 @@
+.page {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.nav-wrapper {
+    background-color: var(--inverted-bg-color);
+}
+
+.nav-inner {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+.sidebar-wrapper {
+    display: flex;
+}
