@@ -1,1 +1,1 @@
-export { PianoKey } from './ui/PianoKey';
+export { PianoKeyList } from './ui/PianoKeyList/PianoKeyList';

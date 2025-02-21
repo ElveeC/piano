@@ -1,12 +1,15 @@
+import { Suspense } from 'react';
 import './App.css';
-import { MainPage } from '../pages/MainPage';
+import { AppRouter } from './providers/router';
 
 function App() {
   
   return (
     <>
       <div>
-        <MainPage />
+        <Suspense fallback={<div>Loading...</div>}>
+          <AppRouter />
+        </Suspense>
       </div>
     </>
   )

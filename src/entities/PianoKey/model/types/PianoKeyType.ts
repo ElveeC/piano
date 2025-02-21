@@ -3,5 +3,5 @@ export interface PianoKeyType {
     keyCode: string;
     noteName: string;
     keyName: string;
-    src: string;
+    file: string;
 }
