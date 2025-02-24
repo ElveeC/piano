@@ -1,0 +1,17 @@
+.item {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 2.8rem;
+    height: 14rem;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 5px;
+}
