@@ -1,5 +1,4 @@
 import cls from './MainPage.module.scss';
-//import { PianoKeyList } from '@/entities/PianoKey';
 import { OctaveList } from '@/components/OctaveList/OctaveList';
 
 const MainPage = () => {
