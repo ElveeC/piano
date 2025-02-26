@@ -5,5 +5,4 @@ export interface PianoKeyType {
     keyName: string;
     file: string;
     octave: number;
-    group?: number;
 }

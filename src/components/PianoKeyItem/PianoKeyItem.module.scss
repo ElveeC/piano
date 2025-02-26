@@ -10,8 +10,35 @@
     align-items: center;
     justify-content: flex-end;
     width: 2.8rem;
-    height: 14rem;
+    height: 16rem;
     box-sizing: border-box;
     border: 1px solid black;
     border-radius: 5px;
+    cursor: pointer;
+
+    &--black {
+        width: 1.8rem;
+        height: 10rem;
+        font-weight: 400;
+        color: white;
+        background-image: linear-gradient(to bottom, rgb(46 45 45), black);
+
+        /* box-shadow: ; */
+    }
+}
+
+.key-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.2rem 0 0;
+
+    &--black {
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
+}
+
+.note-name {
+    font-size: 1rem;
+    padding: 0.5rem 0;
 }

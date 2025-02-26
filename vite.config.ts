@@ -12,5 +12,4 @@ export default defineConfig({
       generateScopedName:'[name]_[local].[contenthash:5]'
     }
   },
-  
 })

@@ -4,203 +4,279 @@ export enum AppRoute {
 
 export const PIANO_KEYS = [
   {
-    id: '1',
+    id: '1w',
     noteName: 'до',
     keyCode: 'q',
     keyName: 'q',
     file: 'do.mp3',
     octave: 0,
-    group: 1
   },
   {
-    id: '2',
+    id: '2w',
     noteName: 'ре',
     keyCode: 'w',
     keyName: 'w',
     file: 're.mp3',
     octave: 0,
-    group: 1
   },
   {
-    id: '3',
+    id: '3w',
     noteName: 'ми',
     keyCode: 'e',
     keyName: 'e',
     file: 'mi.mp3',
     octave: 0,
-    group: 1
   },
   {
-    id: '4',
+    id: '4w',
     noteName: 'фа',
     keyCode: 'r',
     keyName: 'r',
     file: 'fa.mp3',
     octave: 0,
-    group: 2
   },
   {
-    id: '5',
+    id: '5w',
     noteName: 'соль',
     keyCode: 't',
     keyName: 't',
     file: 'sol.mp3',
     octave: 0,
-    group: 2
   },
   {
-    id: '6',
+    id: '6w',
     noteName: 'ля',
     keyCode: 'y',
     keyName: 'y',
     file: 'la.mp3',
     octave: 0,
-    group: 2
   },
   {
-    id: '7',
+    id: '7w',
     noteName: 'си',
     keyCode: 'u',
     keyName: 'u',
     file: 'si.mp3',
     octave: 0,
-    group: 2
   },
   {
-    id: '8',
+    id: '8w',
     noteName: 'до',
     keyCode: 'a',
     keyName: 'a',
     file: 'do1.mp3',
     octave: 1,
-    group: 1
   },
   {
-    id: '9',
+    id: '9w',
     noteName: 'ре',
     keyCode: 's',
     keyName: 's',
     file: 're1.mp3',
     octave: 1,
-    group: 1
   },
   {
-    id: '10',
+    id: '10w',
     noteName: 'ми',
     keyCode: 'd',
     keyName: 'd',
     file: 'mi1.mp3',
     octave: 1,
-    group: 1
   },
   {
-    id: '11',
+    id: '11w',
     noteName: 'фа',
     keyCode: 'f',
     keyName: 'f',
     file: 'fa1.mp3',
     octave: 1,
-    group: 2
   },
   {
-    id: '12',
+    id: '12w',
     noteName: 'соль',
     keyCode: 'g',
     keyName: 'g',
     file: 'sol1.mp3',
     octave: 1,
-    group: 2
   },
   {
-    id: '13',
+    id: '13w',
     noteName: 'ля',
     keyCode: 'h',
     keyName: 'h',
     file: 'la1.mp3',
     octave: 1,
-    group: 2
   },
   {
-    id: '14',
+    id: '14w',
     noteName: 'си',
     keyCode: 'j',
     keyName: 'j',
     file: 'si1.mp3',
     octave: 1,
-    group: 2
   },
   {
-    id: '15',
+    id: '15w',
     noteName: 'до',
     keyCode: 'z',
     keyName: 'z',
     file: 'do2.mp3',
     octave: 2,
-    group: 1
   },
   {
-    id: '16',
+    id: '16w',
     noteName: 'ре',
     keyCode: 'x',
     keyName: 'x',
     file: 're2.mp3',
     octave: 2,
-    group: 1
   },
   {
-    id: '17',
+    id: '17w',
     noteName: 'ми',
     keyCode: 'c',
     keyName: 'c',
     file: 'mi2.mp3',
     octave: 2,
-    group: 1
   },
   {
-    id: '18',
+    id: '18w',
     noteName: 'фа',
     keyCode: 'v',
     keyName: 'v',
     file: 'fa2.mp3',
     octave: 2,
-    group: 2
   },
   {
-    id: '19',
+    id: '19w',
     noteName: 'соль',
     keyCode: 'b',
     keyName: 'b',
     file: 'sol2.mp3',
     octave: 2,
-    group: 2
   },
   {
-    id: '20',
+    id: '20w',
     noteName: 'ля',
     keyCode: 'n',
     keyName: 'n',
     file: 'la2.mp3',
     octave: 2,
-    group: 2
   },
   {
-    id: '21',
+    id: '21w',
     noteName: 'си',
     keyCode: 'm',
     keyName: 'm',
     file: 'si2.mp3',
     octave: 2,
-    group: 2
   },
 ];
 
 export const BLACK_KEYS = [
   {
-    id: '22',
+    id: '1b',
     keyCode: 'Q',
     keyName: 'Q',
     file: 'do_re.mp3',
     octave: 0,
-    group: 1
+  },
+  {
+    id: '2b',
+    keyCode: 'W',
+    keyName: 'W',
+    file: 're_mi.mp3',
+    octave: 0,
+  },
+  {
+    id: '3b',
+    keyCode: 'R',
+    keyName: 'R',
+    file: 'fa_sol.mp3',
+    octave: 0,
+  },
+  {
+    id: '4b',
+    keyCode: 'T',
+    keyName: 'T',
+    file: 'sol_la.mp3',
+    octave: 0,
+  },
+  {
+    id: '5b',
+    keyCode: 'Y',
+    keyName: 'Y',
+    file: 'la_si.mp3',
+    octave: 0,
+  },
+  {
+    id: '6b',
+    keyCode: 'A',
+    keyName: 'A',
+    file: 'do_re1.mp3',
+    octave: 1,
+  },
+  {
+    id: '7b',
+    keyCode: 'S',
+    keyName: 'S',
+    file: 're_mi1.mp3',
+    octave: 1,
+  },
+  {
+    id: '8b',
+    keyCode: 'F',
+    keyName: 'F',
+    file: 'fa_sol1.mp3',
+    octave: 1,
+  },
+  {
+    id: '9b',
+    keyCode: 'G',
+    keyName: 'G',
+    file: 'sol_la1.mp3',
+    octave: 1,
+  },
+  {
+    id: '10b',
+    keyCode: 'H',
+    keyName: 'H',
+    file: 'la_si1.mp3',
+    octave: 1,
+  },
+  {
+    id: '11b',
+    keyCode: 'Z',
+    keyName: 'Z',
+    file: 'do_re2.mp3',
+    octave: 2,
+  },
+  {
+    id: '12b',
+    keyCode: 'X',
+    keyName: 'X',
+    file: 're_mi2.mp3',
+    octave: 2,
+  },
+  {
+    id: '13b',
+    keyCode: 'V',
+    keyName: 'V',
+    file: 'fa_sol2.mp3',
+    octave: 2,
+  },
+  {
+    id: '14b',
+    keyCode: 'B',
+    keyName: 'B',
+    file: 'sol_la2.mp3',
+    octave: 2,
+  },
+  {
+    id: '15b',
+    keyCode: 'N',
+    keyName: 'N',
+    file: 'la_si2.mp3',
+    octave: 2,
   },
 ]
