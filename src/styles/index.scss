@@ -1,0 +1,29 @@
+@use "./reset";
+@use "./variables";
+
+:root {
+    font-family: var(--font-family-main);
+    line-height: 1.5;
+    font-weight: 400;
+    color: var(--main-color);
+    background-color: var(--main-color);
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+  
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+  
+body {
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+}
