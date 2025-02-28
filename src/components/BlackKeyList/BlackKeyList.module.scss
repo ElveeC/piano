@@ -1,3 +1,5 @@
+@use '../../styles/mixins' as *;
+
 .list {
     position: absolute;
     left: 0;
@@ -6,12 +8,25 @@
     padding-left: 1.6rem;
     padding-right: 1.6rem;
     max-width: 100%;
+
+    @include vp-1023 {
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+    }
 }
 
 .item:not(:last-child) {
     margin-right: 1.5rem;
+
+    @include vp-1023 {
+        margin-right: 1rem;
+    }
 }
 
 .item:nth-child(2) {
     margin-right: 3rem;
+
+    @include vp-1023 {
+        margin-right: 2.6rem;
+    }
 }

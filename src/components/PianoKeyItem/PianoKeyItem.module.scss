@@ -1,3 +1,5 @@
+@use '../../styles/mixins' as *;
+
 .button {
     display: flex;
     flex-direction: column;
@@ -5,11 +7,17 @@
     justify-content: flex-end;
     width: 2.8rem;
     height: 16rem;
+    font-size: var(--font-size-m);
     background-color: var(--primary-color);
     box-shadow: inset 0 0 5px -1px var(--main-color);
     border: 1px solid black;
     border-radius: 0 0 5px 5px;
     cursor: pointer;
+
+    @include vp-1023 {
+        width: 2rem;
+        height: 12rem;
+    }
 
     &:hover {
         box-shadow: inset 0 0 10px 1px var(--accent-color);
@@ -32,6 +40,11 @@
         background-image: var(--gradient-background);
         box-shadow: inset 0 0 10px 1px var(--shadow-color);
 
+        @include vp-1023 {
+            width: 1.2rem;
+            height: 7rem;
+        }
+
         &:active {
             background-image: none;
             background-color: var(--accent-color-additional);
@@ -52,10 +65,18 @@
     &--black {
         font-size: 1.1rem;
         font-weight: 400;
+
+        @include vp-1023 {
+            font-size: 1rem;
+        }
     }
 }
 
 .note-name {
     font-size: 1rem;
-    padding: 0.5rem 0;
+    padding: 0.4rem 0;
+
+    @include vp-1023 {
+        font-size: 0.8rem;
+    }
 }

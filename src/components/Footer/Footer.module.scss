@@ -1,0 +1,42 @@
+@use '../../styles/mixins.scss' as *;
+@use '../../styles/variables.scss' as *;
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 20px 0;
+    text-align: left;
+
+    @include vp-767 {
+        justify-content: center;
+    }
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    @include vp-1023 {
+        font-size: 0.8rem;
+    }
+
+    @include vp-767 {
+        display: none;
+    }
+}
+
+.contact {
+    font-size: 0.8rem;
+    text-align: right;
+}
+
+.contact-link {
+    color: inherit;
+    transition: $trans-default;
+    
+    &:hover {
+        color: var(--accent-color);
+    }
+}

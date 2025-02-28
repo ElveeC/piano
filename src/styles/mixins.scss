@@ -1,32 +1,34 @@
+@use './variables' as *;
+
 /* Desktop first */
 
 @mixin vp-1439 {
-  @media (max-width: ($vp-1440 - 1px)) {
-    @content;
-  }
+    @media (max-width: ($vp-1440 - 1px)) {
+        @content;
+    }
 }
 
 @mixin vp-1023 {
-  @media (max-width: ($vp-1024 - 1px)) {
-    @content;
-  }
+    @media (max-width: ($vp-1024 - 1px)) {
+        @content;
+    }
 }
 
 @mixin vp-767 {
-  @media (max-width: ($vp-768 - 1px)) {
-    @content;
-  }
+    @media (max-width: ($vp-768 - 1px)) {
+        @content;
+    }
 }
 
 @mixin vp-479 {
-  @media (max-width: ($vp-480 - 1px)) {
-    @content;
-  }
+    @media (max-width: ($vp-480 - 1px)) {
+        @content;
+    }
 }
 
 
 @mixin vp-319 {
-  @media (max-width: ($vp-320 - 1px)) {
-    @content;
-  }
+    @media (max-width: ($vp-320 - 1px)) {
+        @content;
+    }
 }

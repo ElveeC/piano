@@ -12,8 +12,8 @@ export const PianoKeyItem = (props: PianoKeyItemProps) => {
   const {
     className,
     noteName,
-    keyName,
     keyCode,
+    keyCodeRus,
     file,
     isBlack = false,
   } = props;
@@ -28,28 +28,29 @@ export const PianoKeyItem = (props: PianoKeyItemProps) => {
       return;
     }
 
-    if (evt.currentTarget.dataset.note === noteName) {
-      if (keyRef.current) {
-        keyRef.current.currentTime = 0.0;
-        keyRef.current.play();
-      }
+    if (keyRef.current) {
+      keyRef.current.currentTime = 0.0;
+      keyRef.current.play();
     }
   };
 
   const onPlayKeyUp = (evt: KeyboardEvent) => {
-    if (evt.key.toLocaleLowerCase() === keyCode.toLocaleLowerCase() && keyRef.current) {
+    if (
+      (evt.key.toLocaleLowerCase() === keyCode.toLocaleLowerCase() ||
+        evt.key.toLocaleLowerCase() === keyCodeRus.toLocaleLowerCase()) &&
+      keyRef.current
+    ) {
       setActive(false);
       setKeyUp(true);
     }
   };
 
   const onPlayKeyDown = (evt: KeyboardEvent) => {
-
     if (!isKeyUp || isBlocked) {
       return;
     }
 
-    if (evt.key === keyCode && keyRef.current) {
+    if ((evt.key === keyCode || evt.key === keyCodeRus) && keyRef.current) {
       keyRef.current.currentTime = 0.0;
       keyRef.current.play();
       setActive(true);
@@ -109,7 +110,7 @@ export const PianoKeyItem = (props: PianoKeyItemProps) => {
             [`${cls['key-name--black']}`]: isBlack,
           })}
         >
-          {keyName}
+          {keyCode}
         </span>
         <span className={cls['note-name']}>{noteName}</span>
       </button>

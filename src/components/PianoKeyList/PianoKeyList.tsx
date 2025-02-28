@@ -16,7 +16,7 @@ export const PianoKeyList = ({ className, pianoKeys }: PianoKeyListProps) => {
           key={key.keyCode}
           id={key.id}
           noteName={key.noteName}
-          keyName={key.keyName}
+          keyCodeRus={key.keyCodeRus}
           keyCode={key.keyCode}
           file={key.file}
           octave={key.octave}
