@@ -26,7 +26,7 @@ export const PianoKeyItem = (props: PianoKeyItemProps) => {
 
   return (
     <li className={cn(cls.item, className)}>
-      <audio ref={keyRef} src={`../../../src/assets/sounds/${file}`}></audio>
+      <audio ref={keyRef} src={`../../assets/sounds/${file}`}></audio>
       <button
         className={cn(
           cls.button,
